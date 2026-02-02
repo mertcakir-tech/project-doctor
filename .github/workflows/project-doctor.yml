@@ -22,9 +22,12 @@ jobs:
 
       - name: Run Project Doctor
         run: |
-          RESULT=$(project-doctor --json)
-          SCORE=$(echo $RESULT | jq -r '.score')
+          project-doctor --json > result.json 2>/dev/null
+          cat result.json
+
+          SCORE=$(jq -r '.score' result.json)
           echo "Project Doctor score: $SCORE"
+
           if [ "$SCORE" -lt 80 ]; then
             echo "Health score is below threshold"
             exit 1
