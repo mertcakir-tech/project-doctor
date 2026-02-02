@@ -1,16 +1,35 @@
 {
   "name": "project-doctor",
   "version": "1.0.15",
-  "description": "",
+  "description": "CLI tool to analyze repository health, code quality, and best practices for Node.js projects",
   "main": "index.js",
   "bin": {
     "project-doctor": "src/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests specified\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "project-doctor",
+    "repo-health",
+    "repository-health",
+    "code-health",
+    "code-quality",
+    "quality-check",
+    "static-analysis",
+    "best-practices",
+    "ci",
+    "ci-cd",
+    "github-actions",
+    "automation",
+    "nodejs",
+    "npm",
+    "devops",
+    "developer-tools",
+    "cli",
+    "open-source"
+  ],
+  "author": "Mert",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
