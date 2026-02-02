@@ -22,7 +22,9 @@ jobs:
 
       - name: Run Project Doctor
         run: |
-          project-doctor --json > result.json 2>/dev/null || true
+          project-doctor --json > raw.txt 2>/dev/null || true
+
+          sed -n '/^{/,$p' raw.txt > result.json
           cat result.json || echo "No JSON output"
 
           SCORE=$(jq -r '.score // 0' result.json)
