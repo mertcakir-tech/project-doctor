@@ -1,5 +1,5 @@
 {
-  "name": "project-doctor",
+  "name": "@merttech/project-doctor",
   "version": "1.0.15",
   "description": "CLI tool to analyze repository health, code quality, and best practices for Node.js projects",
   "main": "index.js",
