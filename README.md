@@ -1,10 +1,7 @@
+# 🩺 Project Doctor
 
 ![npm](https://img.shields.io/npm/v/project-doctor)
 ![npm](https://img.shields.io/npm/dm/project-doctor)
-
-
-
-# 🩺 Project Doctor
 
 Diagnose project setup issues **before they break**.
 
@@ -44,12 +41,10 @@ More stacks will be added over time.
 
 ---
 
-## ⚙️ Installation (local / dev)
+## 📦 Installation
 
 ```bash
-npm link
-This makes project-doctor available globally on your machine.
-
+npm install -g project-doctor
 ▶️ Usage
 Run inside any project directory:
 
@@ -64,27 +59,23 @@ Example output:
 
 📊 Health score: 75 / 100
 🤖 JSON Output (CI / Automation)
-For scripts and pipelines:
-
 project-doctor --json
-Output:
+Example output:
 
 {
   "score": 75,
   "projectType": "flutter"
 }
-When --json is used, all human-readable logs are silenced.
+When --json is used, human-readable logs are suppressed.
 
 🛠️ Auto-Fix Mode (Safe Only)
 project-doctor --fix
-What it can fix:
-
+What it can fix
 Create .gitignore if missing
 
 Create .env.example if missing
 
-What it will never do:
-
+What it will never do
 Modify .env
 
 Touch source code
@@ -92,7 +83,7 @@ Touch source code
 Overwrite existing files
 
 ⚙️ Configuration (Optional)
-Create a doctor.config.json file:
+Create doctor.config.json:
 
 {
   "requireEnv": true,
@@ -105,7 +96,7 @@ Disable specific checks:
 }
 🧠 Philosophy
 Project Doctor is not a linter.
-It does not judge your code style.
+It does not judge code style.
 
 It focuses only on project health and setup correctness.
 
@@ -127,8 +118,5 @@ Configurable scoring
 
 GitHub Action
 
-npm package release
-
 📄 License
 MIT
-<!-- test -->
