@@ -1,4 +1,4 @@
 {
   "requireEnv": false,
-  "requireGitignore": false
+  "requireGitignore": true
 }
