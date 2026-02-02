@@ -1,3 +1,9 @@
+
+![npm](https://img.shields.io/npm/v/project-doctor)
+![npm](https://img.shields.io/npm/dm/project-doctor)
+
+
+
 # 🩺 Project Doctor
 
 Diagnose project setup issues **before they break**.
