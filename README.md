@@ -1,7 +1,7 @@
 # 🩺 Project Doctor
 
-![npm](https://img.shields.io/npm/v/project-doctor)
-![npm](https://img.shields.io/npm/dm/project-doctor)
+![npm](https://img.shields.io/npm/v/@merttech/project-doctor)
+![npm](https://img.shields.io/npm/dm/@merttech/project-doctor)
 
 Diagnose project setup issues **before they break**.
 
@@ -44,7 +44,7 @@ More stacks will be added over time.
 ## 📦 Installation
 
 ```bash
-npm install -g project-doctor
+npm install -g @merttech/project-doctor
 ▶️ Usage
 Run inside any project directory:
 
@@ -120,3 +120,4 @@ GitHub Action
 
 📄 License
 MIT
+
