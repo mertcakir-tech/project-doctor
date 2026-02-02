@@ -22,10 +22,10 @@ jobs:
 
       - name: Run Project Doctor
         run: |
-          project-doctor --json > result.json 2>/dev/null
-          cat result.json
+          project-doctor --json > result.json 2>/dev/null || true
+          cat result.json || echo "No JSON output"
 
-          SCORE=$(jq -r '.score' result.json)
+          SCORE=$(jq -r '.score // 0' result.json)
           echo "Project Doctor score: $SCORE"
 
           if [ "$SCORE" -lt 80 ]; then
